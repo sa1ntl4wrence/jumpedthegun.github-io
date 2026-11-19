@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="image.png" id="picture">
+
+  <audio id="song" src="song.wav" loop></audio>
+
+  <script>
+    const song = document.getElementById("song");
+    const picture = document.getElementById("picture");
+
+    picture.addEventListener("click", () => {
+      song.play();
+    });
+  </script>
+
+</body>
+</html>
